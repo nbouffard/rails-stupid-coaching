@@ -1,3 +1,11 @@
-<p>Your question: <%= @question.capitalize %></p>
-<p>Coach answer: <%= @answer %></p>
-<%= link_to "Ask another question", ask_path %>
+<div class="content-center">
+  <div class="question">
+    <h2>Your question:</h2>
+    <p><%= @question.capitalize %></p>
+  </div>
+  <div class="answer">
+    <h2>Coach Answer:</h2>
+    <p><%= @answer %></p>
+  </div>
+  <%= link_to "Ask another question", ask_path, class:"link" %>
+</div>
